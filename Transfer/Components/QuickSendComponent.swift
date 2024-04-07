@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct QuickSendComponent: View {
+    @State private var startAnimation = false
+    
     var body: some View {
         VStack {
             HStack {
@@ -54,6 +56,11 @@ struct QuickSendComponent: View {
                     }
                 }
             }
+        }
+        .modifier(DropDownAnimation(startAnimation: startAnimation))
+        .onAppear() {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3, execute: {                          startAnimation = true
+            })
         }
     }
 }

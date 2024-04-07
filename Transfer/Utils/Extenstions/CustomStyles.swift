@@ -18,10 +18,21 @@ struct MainActionButtonStyle : ButtonStyle {
             .padding(.vertical, 40)
             .foregroundStyle(colorConfig == ButtonColorConfig.dark ? .white : .cBlack)
             .background(colorConfig == ButtonColorConfig.dark ? Color.cBlack : Color.white)
-            .clipShape(RoundedRectangle(cornerRadius: 30))
+            .clipShape(RoundedRectangle(cornerRadius: 35))
     }
 }
 
+
+struct DropDownAnimation : ViewModifier {
+    var startAnimation: Bool
+    
+    func body(content: Content) -> some View {
+        content
+            .opacity(startAnimation ? 1.0 : 0.0)
+            .offset(CGSize(width: 0, height: startAnimation ? 0 : -50))
+            .animation(.smooth(duration: 0.5), value: startAnimation)
+    }
+}
 
 enum ButtonColorConfig {
     case dark, light

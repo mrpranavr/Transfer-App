@@ -20,9 +20,12 @@ struct ContentView: View {
                     // MARK: Money Section
                     MoneyViewComponent()
                     
-                    // MARK: Quick Send Section
-                    VStack {
+                    VStack(spacing: 44) {
+                        // MARK: Quick Send Section
                         QuickSendComponent()
+                        
+                        // MARK: History Section
+                        HistoryComponent()
                     }
                     .padding(.horizontal, 14)
                 }

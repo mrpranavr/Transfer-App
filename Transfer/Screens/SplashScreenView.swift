@@ -20,7 +20,7 @@ struct SplashScreenView: View {
                 Color.customBlack
                     .ignoresSafeArea()
                 
-                Text("Transfer.")
+                Text("Transfer")
                     .rotationEffect(Angle(degrees: 270))
                     .font(Font.custom("Poppins-Bold", size: 120))
                     .scaledToFill()

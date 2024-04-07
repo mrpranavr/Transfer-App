@@ -23,4 +23,12 @@ extension Font {
     static var headerBold: Font {
         Font.custom("Poppins-Bold", size: 120)
     }
+    
+    static var historyName: Font {
+        Font.custom("Poppins-Medium", size: 12)
+    }
+    
+    static var smallest: Font {
+        Font.custom("Poppins-Medium", size: 8)
+    }
 }

@@ -11,6 +11,9 @@
 		C5C2F3432BC27280005A891B /* CustomStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C2F3422BC27280005A891B /* CustomStyles.swift */; };
 		C5C2F3452BC27B37005A891B /* QuickSendComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C2F3442BC27B37005A891B /* QuickSendComponent.swift */; };
 		C5C2F3472BC2840B005A891B /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C2F3462BC2840B005A891B /* UserModel.swift */; };
+		C5C2F3492BC29B3F005A891B /* HistoryComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C2F3482BC29B3F005A891B /* HistoryComponent.swift */; };
+		C5C2F34B2BC2B0C6005A891B /* PaymentHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C2F34A2BC2B0C6005A891B /* PaymentHistoryModel.swift */; };
+		C5C2F34D2BC2B2E2005A891B /* HistoryTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C2F34C2BC2B2E2005A891B /* HistoryTile.swift */; };
 		C5CB839B2BC154BB008798B0 /* TransferApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CB839A2BC154BB008798B0 /* TransferApp.swift */; };
 		C5CB839D2BC154BB008798B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CB839C2BC154BB008798B0 /* ContentView.swift */; };
 		C5CB839F2BC154BC008798B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5CB839E2BC154BC008798B0 /* Assets.xcassets */; };
@@ -26,6 +29,9 @@
 		C5C2F3422BC27280005A891B /* CustomStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStyles.swift; sourceTree = "<group>"; };
 		C5C2F3442BC27B37005A891B /* QuickSendComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSendComponent.swift; sourceTree = "<group>"; };
 		C5C2F3462BC2840B005A891B /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		C5C2F3482BC29B3F005A891B /* HistoryComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryComponent.swift; sourceTree = "<group>"; };
+		C5C2F34A2BC2B0C6005A891B /* PaymentHistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryModel.swift; sourceTree = "<group>"; };
+		C5C2F34C2BC2B2E2005A891B /* HistoryTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTile.swift; sourceTree = "<group>"; };
 		C5CB83972BC154BB008798B0 /* Transfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transfer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5CB839A2BC154BB008798B0 /* TransferApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferApp.swift; sourceTree = "<group>"; };
 		C5CB839C2BC154BB008798B0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -103,6 +109,8 @@
 			children = (
 				C5CB83B92BC16869008798B0 /* MoneyViewComponent.swift */,
 				C5C2F3442BC27B37005A891B /* QuickSendComponent.swift */,
+				C5C2F3482BC29B3F005A891B /* HistoryComponent.swift */,
+				C5C2F34C2BC2B2E2005A891B /* HistoryTile.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -111,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				C5C2F3462BC2840B005A891B /* UserModel.swift */,
+				C5C2F34A2BC2B0C6005A891B /* PaymentHistoryModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -212,12 +221,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5C2F34D2BC2B2E2005A891B /* HistoryTile.swift in Sources */,
 				C5CB839D2BC154BB008798B0 /* ContentView.swift in Sources */,
 				C5CB83BA2BC16869008798B0 /* MoneyViewComponent.swift in Sources */,
+				C5C2F34B2BC2B0C6005A891B /* PaymentHistoryModel.swift in Sources */,
 				C5CB83B82BC15E69008798B0 /* Themes.swift in Sources */,
 				C5C2F33F2BC268B1005A891B /* CustomFonts.swift in Sources */,
 				C5CB839B2BC154BB008798B0 /* TransferApp.swift in Sources */,
 				C5C2F3452BC27B37005A891B /* QuickSendComponent.swift in Sources */,
+				C5C2F3492BC29B3F005A891B /* HistoryComponent.swift in Sources */,
 				C5CB83B62BC15DF8008798B0 /* SplashScreenView.swift in Sources */,
 				C5C2F3472BC2840B005A891B /* UserModel.swift in Sources */,
 				C5C2F3432BC27280005A891B /* CustomStyles.swift in Sources */,
@@ -375,9 +387,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.icarus.Transfer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -410,9 +424,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.icarus.Transfer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

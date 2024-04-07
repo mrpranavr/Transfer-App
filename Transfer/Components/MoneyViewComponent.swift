@@ -13,7 +13,9 @@ struct MoneyViewComponent: View {
     
     var body: some View {
         ZStack {
-            Color(.cGreen)
+//            Color(.cGreen)
+//                .ignoresSafeArea()
+            LinearGradient(colors: [.cGreen, .cDarkGreen], startPoint: .leading, endPoint: .trailing)
                 .ignoresSafeArea()
             
             // MARK: Inside Content
