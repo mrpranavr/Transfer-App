@@ -32,11 +32,11 @@ struct User : Identifiable {
 
 extension User {
     static let mockUsers : [User] = [
-        User(name: "Albin", Image: "testImage1"),
-        User(name: "Dharan", Image: "testImage1"),
-        User(name: "Akil", Image: "testImage1"),
-        User(name: "Fahad", Image: "testImage1"),
-        User(name: "Johny", Image: "testImage1"),
-        User(name: "OC", Image: "testImage1"),
+        User(name: "Albin", Image: "ProfileMock"),
+        User(name: "Dharan", Image: "ProfileMock"),
+        User(name: "Akil", Image: "ProfileMock"),
+        User(name: "Fahad", Image: "ProfileMock"),
+        User(name: "Johny", Image: ""),
+        User(name: "OC", Image: ""),
     ]
 }

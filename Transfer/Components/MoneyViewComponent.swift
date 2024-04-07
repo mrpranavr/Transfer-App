@@ -60,7 +60,7 @@ struct MoneyViewComponent: View {
                     
                     // Buttons
                     GeometryReader { geo in
-                        HStack {
+                        HStack(alignment: .center) {
                             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
                                 Text("request")
                                     .font(.captionTitle)
@@ -76,8 +76,10 @@ struct MoneyViewComponent: View {
                             .buttonStyle(MainActionButtonStyle(hPadding: geo.size.width < 356 ? 60 : 62, colorConfig: ButtonColorConfig.light))
                             
                         }
+                        .frame(maxWidth: .infinity)
                     }
                     .frame(height: 100)
+                    
                 }
                 .frame(maxWidth: .infinity)
                 
