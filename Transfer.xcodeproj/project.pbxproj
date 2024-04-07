@@ -7,18 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C5C2F33F2BC268B1005A891B /* CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C2F33E2BC268B1005A891B /* CustomFonts.swift */; };
+		C5C2F3432BC27280005A891B /* CustomStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C2F3422BC27280005A891B /* CustomStyles.swift */; };
+		C5C2F3452BC27B37005A891B /* QuickSendComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C2F3442BC27B37005A891B /* QuickSendComponent.swift */; };
+		C5C2F3472BC2840B005A891B /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C2F3462BC2840B005A891B /* UserModel.swift */; };
 		C5CB839B2BC154BB008798B0 /* TransferApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CB839A2BC154BB008798B0 /* TransferApp.swift */; };
 		C5CB839D2BC154BB008798B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CB839C2BC154BB008798B0 /* ContentView.swift */; };
 		C5CB839F2BC154BC008798B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5CB839E2BC154BC008798B0 /* Assets.xcassets */; };
 		C5CB83A22BC154BC008798B0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5CB83A12BC154BC008798B0 /* Preview Assets.xcassets */; };
+		C5CB83B42BC15ACC008798B0 /* Poppins in Resources */ = {isa = PBXBuildFile; fileRef = C5CB83AD2BC155CB008798B0 /* Poppins */; };
+		C5CB83B62BC15DF8008798B0 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CB83B52BC15DF8008798B0 /* SplashScreenView.swift */; };
+		C5CB83B82BC15E69008798B0 /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CB83B72BC15E69008798B0 /* Themes.swift */; };
+		C5CB83BA2BC16869008798B0 /* MoneyViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CB83B92BC16869008798B0 /* MoneyViewComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C5C2F33E2BC268B1005A891B /* CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFonts.swift; sourceTree = "<group>"; };
+		C5C2F3422BC27280005A891B /* CustomStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStyles.swift; sourceTree = "<group>"; };
+		C5C2F3442BC27B37005A891B /* QuickSendComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSendComponent.swift; sourceTree = "<group>"; };
+		C5C2F3462BC2840B005A891B /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		C5CB83972BC154BB008798B0 /* Transfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transfer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5CB839A2BC154BB008798B0 /* TransferApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferApp.swift; sourceTree = "<group>"; };
 		C5CB839C2BC154BB008798B0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C5CB839E2BC154BC008798B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5CB83A12BC154BC008798B0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C5CB83AD2BC155CB008798B0 /* Poppins */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Poppins; sourceTree = "<group>"; };
+		C5CB83B12BC157F2008798B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C5CB83B52BC15DF8008798B0 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		C5CB83B72BC15E69008798B0 /* Themes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themes.swift; sourceTree = "<group>"; };
+		C5CB83B92BC16869008798B0 /* MoneyViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyViewComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +68,12 @@
 		C5CB83992BC154BB008798B0 /* Transfer */ = {
 			isa = PBXGroup;
 			children = (
+				C5CB83B12BC157F2008798B0 /* Info.plist */,
+				C5CB83AC2BC154EE008798B0 /* Fonts */,
+				C5CB83AF2BC155DF008798B0 /* Utils */,
+				C5CB83AA2BC154DB008798B0 /* Models */,
+				C5CB83A92BC154D6008798B0 /* Components */,
+				C5CB83A82BC154CD008798B0 /* Screens */,
 				C5CB839A2BC154BB008798B0 /* TransferApp.swift */,
 				C5CB839C2BC154BB008798B0 /* ContentView.swift */,
 				C5CB839E2BC154BC008798B0 /* Assets.xcassets */,
@@ -65,6 +88,57 @@
 				C5CB83A12BC154BC008798B0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C5CB83A82BC154CD008798B0 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C5CB83B52BC15DF8008798B0 /* SplashScreenView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		C5CB83A92BC154D6008798B0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C5CB83B92BC16869008798B0 /* MoneyViewComponent.swift */,
+				C5C2F3442BC27B37005A891B /* QuickSendComponent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C5CB83AA2BC154DB008798B0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C5C2F3462BC2840B005A891B /* UserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C5CB83AC2BC154EE008798B0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C5CB83AD2BC155CB008798B0 /* Poppins */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C5CB83AF2BC155DF008798B0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C5CB83B02BC155E2008798B0 /* Extenstions */,
+				C5CB83B72BC15E69008798B0 /* Themes.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C5CB83B02BC155E2008798B0 /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+				C5C2F33E2BC268B1005A891B /* CustomFonts.swift */,
+				C5C2F3422BC27280005A891B /* CustomStyles.swift */,
+			);
+			path = Extenstions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5CB83B42BC15ACC008798B0 /* Poppins in Resources */,
 				C5CB83A22BC154BC008798B0 /* Preview Assets.xcassets in Resources */,
 				C5CB839F2BC154BC008798B0 /* Assets.xcassets in Resources */,
 			);
@@ -138,7 +213,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5CB839D2BC154BB008798B0 /* ContentView.swift in Sources */,
+				C5CB83BA2BC16869008798B0 /* MoneyViewComponent.swift in Sources */,
+				C5CB83B82BC15E69008798B0 /* Themes.swift in Sources */,
+				C5C2F33F2BC268B1005A891B /* CustomFonts.swift in Sources */,
 				C5CB839B2BC154BB008798B0 /* TransferApp.swift in Sources */,
+				C5C2F3452BC27B37005A891B /* QuickSendComponent.swift in Sources */,
+				C5CB83B62BC15DF8008798B0 /* SplashScreenView.swift in Sources */,
+				C5C2F3472BC2840B005A891B /* UserModel.swift in Sources */,
+				C5C2F3432BC27280005A891B /* CustomStyles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +357,7 @@
 				DEVELOPMENT_TEAM = F4B9M6MWDX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Transfer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +387,7 @@
 				DEVELOPMENT_TEAM = F4B9M6MWDX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Transfer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
