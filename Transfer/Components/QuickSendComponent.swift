@@ -38,20 +38,23 @@ struct QuickSendComponent: View {
                     
                     ForEach(User.mockUsers) { user in
                         Button(action: {}, label: {
-                            if user.Image != "" {
-                                Image(user.Image)
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fill)
-                                    .frame(width: 88, height: 88)
-                                    .clipShape(RoundedRectangle(cornerRadius: 25))
-                            } else {
-                                Text(String(user.name.first ?? "X").capitalized)
-                                    .font(.sectionTitle)
-                                    .foregroundStyle(.white)
-                                    .frame(width: 88, height: 88)
-                                    .background(Color.white.opacity(0.1))
-                                    .clipShape(RoundedRectangle(cornerRadius: 25))
-                            }
+                            
+                            NavigationLink(destination: PaymentScreenView(selectedUser: user).navigationBarBackButtonHidden(true), label: {
+                                if user.Image != "" {
+                                    Image(user.Image)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fill)
+                                        .frame(width: 88, height: 88)
+                                        .clipShape(RoundedRectangle(cornerRadius: 25))
+                                } else {
+                                    Text(String(user.name.first ?? "X").capitalized)
+                                        .font(.sectionTitle)
+                                        .foregroundStyle(.white)
+                                        .frame(width: 88, height: 88)
+                                        .background(Color.white.opacity(0.1))
+                                        .clipShape(RoundedRectangle(cornerRadius: 25))
+                                }
+                            })
                         })
                     }
                 }

@@ -11,28 +11,30 @@ struct ContentView: View {
     @State private var startAnimation : Bool = false
     
     var body: some View {
-        ZStack(content: {
-            Color.customBlack
-                .ignoresSafeArea()
-            
-            ScrollView(content: {
-                VStack(spacing: 44) {
-                    // MARK: Money Section
-                    MoneyViewComponent()
-                    
+        NavigationStack {
+            ZStack(content: {
+                Color.customBlack
+                    .ignoresSafeArea()
+                
+                ScrollView(showsIndicators: false, content: {
                     VStack(spacing: 44) {
-                        // MARK: Quick Send Section
-                        QuickSendComponent()
+                        // MARK: Money Section
+                        MoneyViewComponent()
                         
-                        // MARK: History Section
-                        HistoryComponent()
+                        VStack(spacing: 44) {
+                            // MARK: Quick Send Section
+                            QuickSendComponent()
+                            
+                            // MARK: History Section
+                            HistoryComponent()
+                        }
+                        .padding(.horizontal, 14)
                     }
-                    .padding(.horizontal, 14)
-                }
+                })
+                .padding(10)
+                .ignoresSafeArea()
             })
-            .padding(10)
-            .ignoresSafeArea()
-        })
+        }
     }
 }
 

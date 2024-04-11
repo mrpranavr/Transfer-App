@@ -22,6 +22,9 @@
 		C5CB83B62BC15DF8008798B0 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CB83B52BC15DF8008798B0 /* SplashScreenView.swift */; };
 		C5CB83B82BC15E69008798B0 /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CB83B72BC15E69008798B0 /* Themes.swift */; };
 		C5CB83BA2BC16869008798B0 /* MoneyViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CB83B92BC16869008798B0 /* MoneyViewComponent.swift */; };
+		C5E8E5132BC52B6A00ADB9BD /* PaymentScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E8E5122BC52B6A00ADB9BD /* PaymentScreenView.swift */; };
+		C5E8E5152BC7DB2D00ADB9BD /* NumberPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E8E5142BC7DB2D00ADB9BD /* NumberPad.swift */; };
+		C5E8E5172BC7DB5D00ADB9BD /* NumberKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E8E5162BC7DB5D00ADB9BD /* NumberKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		C5CB83B52BC15DF8008798B0 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		C5CB83B72BC15E69008798B0 /* Themes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themes.swift; sourceTree = "<group>"; };
 		C5CB83B92BC16869008798B0 /* MoneyViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyViewComponent.swift; sourceTree = "<group>"; };
+		C5E8E5122BC52B6A00ADB9BD /* PaymentScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentScreenView.swift; sourceTree = "<group>"; };
+		C5E8E5142BC7DB2D00ADB9BD /* NumberPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPad.swift; sourceTree = "<group>"; };
+		C5E8E5162BC7DB5D00ADB9BD /* NumberKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				C5CB83B52BC15DF8008798B0 /* SplashScreenView.swift */,
+				C5E8E5122BC52B6A00ADB9BD /* PaymentScreenView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -111,6 +118,7 @@
 				C5C2F3442BC27B37005A891B /* QuickSendComponent.swift */,
 				C5C2F3482BC29B3F005A891B /* HistoryComponent.swift */,
 				C5C2F34C2BC2B2E2005A891B /* HistoryTile.swift */,
+				C5E8E5142BC7DB2D00ADB9BD /* NumberPad.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -120,6 +128,7 @@
 			children = (
 				C5C2F3462BC2840B005A891B /* UserModel.swift */,
 				C5C2F34A2BC2B0C6005A891B /* PaymentHistoryModel.swift */,
+				C5E8E5162BC7DB5D00ADB9BD /* NumberKeys.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -226,8 +235,11 @@
 				C5CB83BA2BC16869008798B0 /* MoneyViewComponent.swift in Sources */,
 				C5C2F34B2BC2B0C6005A891B /* PaymentHistoryModel.swift in Sources */,
 				C5CB83B82BC15E69008798B0 /* Themes.swift in Sources */,
+				C5E8E5132BC52B6A00ADB9BD /* PaymentScreenView.swift in Sources */,
 				C5C2F33F2BC268B1005A891B /* CustomFonts.swift in Sources */,
+				C5E8E5172BC7DB5D00ADB9BD /* NumberKeys.swift in Sources */,
 				C5CB839B2BC154BB008798B0 /* TransferApp.swift in Sources */,
+				C5E8E5152BC7DB2D00ADB9BD /* NumberPad.swift in Sources */,
 				C5C2F3452BC27B37005A891B /* QuickSendComponent.swift in Sources */,
 				C5C2F3492BC29B3F005A891B /* HistoryComponent.swift in Sources */,
 				C5CB83B62BC15DF8008798B0 /* SplashScreenView.swift in Sources */,

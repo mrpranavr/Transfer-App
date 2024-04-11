@@ -31,4 +31,8 @@ extension Font {
     static var smallest: Font {
         Font.custom("Poppins-Medium", size: 8)
     }
+    
+    static var numbers: Font {
+        Font.custom("Poppins-Medium", size: 25)
+    }
 }
