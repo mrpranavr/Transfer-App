@@ -14,6 +14,13 @@ struct PaymentScreenView: View {
     
     var selectedUser : User
     
+    func makeNewPayment() {
+        let newPayment = PaymentHistory(user: selectedUser, paymentDate: Date(), amount: Double(enteredNumber) ?? 0, description: "")
+        
+        PaymentHistory.mockHistories.append(newPayment)
+        print(PaymentHistory.mockHistories)
+    }
+    
     var body: some View {
         
         ZStack {
@@ -127,7 +134,6 @@ struct PaymentScreenView: View {
                         // Swipe Action
                         ZStack {
                             RoundedRectangle(cornerRadius: 30)
-                            //                            .offset(x: viewState.width)
                                 .frame(width: .infinity, height: 100)
                                 .foregroundStyle(Color.white.opacity(0.1))
                             
@@ -146,7 +152,7 @@ struct PaymentScreenView: View {
                                         .offset(x: viewState.width + 5)
                                         .gesture(
                                             DragGesture().onChanged { value in
-                                                print(value.translation.width)
+                                               
                                                 if(value.translation.width < 250 && value.translation.width > 0) {
                                                     viewState = value.translation
                                                 }
@@ -154,6 +160,12 @@ struct PaymentScreenView: View {
                                                 .onEnded { value in
                                                     withAnimation(.spring()) {
                                                         viewState = .zero
+                                                        
+                                                    }
+                                                    print(value.translation.width)
+                                                    if(value.translation.width > 230) {
+                                                        // Create a payment here
+                                                        makeNewPayment()
                                                     }
                                                 }
                                         )

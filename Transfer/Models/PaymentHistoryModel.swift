@@ -35,7 +35,7 @@ struct PaymentHistory : Identifiable {
 }
 
 extension PaymentHistory {
-    static let mockHistories: [PaymentHistory] = [
+    static var mockHistories: [PaymentHistory] = [
         PaymentHistory(user: User(name: "Icarus", Image: "ProfileMock"), paymentDate: Date(), amount: 100.00, description: "test desc"),
         PaymentHistory(user: User(name: "Icarus", Image: "ProfileMock"), paymentDate: Date(), amount: 100.00, description: "test desc"),
         PaymentHistory(user: User(name: "Icarus", Image: "ProfileMock"), paymentDate: Date(), amount: 100.00, description: "test desc"),
